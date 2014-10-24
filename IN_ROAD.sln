@@ -1,0 +1,47 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IN_ROAD", "IN_ROAD.vcxproj", "{0A33FAB2-7175-443B-9927-19E7A487FE60}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D0B67551-3531-47F7-B2E3-1C04C6F30A29} = {D0B67551-3531-47F7-B2E3-1C04C6F30A29}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ROAD", "ROAD\ROAD.vcxproj", "{214F238C-972B-42D9-B30E-C77017D253C6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ROADover", "ROADover\ROADover.vcxproj", "{AE67DC35-F518-4E8A-9BC6-4E43577B41C1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{214F238C-972B-42D9-B30E-C77017D253C6} = {214F238C-972B-42D9-B30E-C77017D253C6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ROADoverWAVE", "ROADoverWAVE\ROADoverWAVE.vcxproj", "{D0B67551-3531-47F7-B2E3-1C04C6F30A29}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AE67DC35-F518-4E8A-9BC6-4E43577B41C1} = {AE67DC35-F518-4E8A-9BC6-4E43577B41C1}
+		{214F238C-972B-42D9-B30E-C77017D253C6} = {214F238C-972B-42D9-B30E-C77017D253C6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A33FAB2-7175-443B-9927-19E7A487FE60}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0A33FAB2-7175-443B-9927-19E7A487FE60}.Debug|Win32.Build.0 = Debug|Win32
+		{0A33FAB2-7175-443B-9927-19E7A487FE60}.Release|Win32.ActiveCfg = Release|Win32
+		{0A33FAB2-7175-443B-9927-19E7A487FE60}.Release|Win32.Build.0 = Release|Win32
+		{214F238C-972B-42D9-B30E-C77017D253C6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{214F238C-972B-42D9-B30E-C77017D253C6}.Debug|Win32.Build.0 = Debug|Win32
+		{214F238C-972B-42D9-B30E-C77017D253C6}.Release|Win32.ActiveCfg = Release|Win32
+		{214F238C-972B-42D9-B30E-C77017D253C6}.Release|Win32.Build.0 = Release|Win32
+		{AE67DC35-F518-4E8A-9BC6-4E43577B41C1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AE67DC35-F518-4E8A-9BC6-4E43577B41C1}.Debug|Win32.Build.0 = Debug|Win32
+		{AE67DC35-F518-4E8A-9BC6-4E43577B41C1}.Release|Win32.ActiveCfg = Release|Win32
+		{AE67DC35-F518-4E8A-9BC6-4E43577B41C1}.Release|Win32.Build.0 = Release|Win32
+		{D0B67551-3531-47F7-B2E3-1C04C6F30A29}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D0B67551-3531-47F7-B2E3-1C04C6F30A29}.Debug|Win32.Build.0 = Debug|Win32
+		{D0B67551-3531-47F7-B2E3-1C04C6F30A29}.Release|Win32.ActiveCfg = Release|Win32
+		{D0B67551-3531-47F7-B2E3-1C04C6F30A29}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

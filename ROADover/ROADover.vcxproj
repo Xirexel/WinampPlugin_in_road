@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AE67DC35-F518-4E8A-9BC6-4E43577B41C1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ROADover</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AROADover.h" />
+    <ClInclude Include="DoubleContainer.h" />
+    <ClInclude Include="DoubleDataContainer.h" />
+    <ClInclude Include="FractalDataContainer.h" />
+    <ClInclude Include="FractalDataContainerCollection.h" />
+    <ClInclude Include="IChannelsMixing.h" />
+    <ClInclude Include="IFractalDataContainerCollection.h" />
+    <ClInclude Include="IRawDataBuffer.h" />
+    <ClInclude Include="LminusRMixingChannels.h" />
+    <ClInclude Include="LplusRMixingChannels.h" />
+    <ClInclude Include="MixingChannelsMode.h" />
+    <ClInclude Include="NoneMixingChannels.h" />
+    <ClInclude Include="RawDataBuffer.h" />
+    <ClInclude Include="Result.h" />
+    <ClInclude Include="ROADdataBuffer.h" />
+    <ClInclude Include="ROADFormat.h" />
+    <ClInclude Include="ROADManager.h" />
+    <ClInclude Include="ROADoverDecodingOptions.h" />
+    <ClInclude Include="roadover_global.h" />
+    <ClInclude Include="UCharDataContainer.h" />
+    <ClInclude Include="UIntDataContainer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AROADover.cpp" />
+    <ClCompile Include="DoubleContainer.cpp" />
+    <ClCompile Include="DoubleDataContainer.cpp" />
+    <ClCompile Include="FractalDataContainer.cpp" />
+    <ClCompile Include="FractalDataContainerCollection.cpp" />
+    <ClCompile Include="IChannelsMixing.cpp" />
+    <ClCompile Include="IFractalDataContainerCollection.cpp" />
+    <ClCompile Include="IRawDataBuffer.cpp" />
+    <ClCompile Include="LminusRMixingChannels.cpp" />
+    <ClCompile Include="LplusRMixingChannels.cpp" />
+    <ClCompile Include="MixingChannelsMode.cpp" />
+    <ClCompile Include="NoneMixingChannels.cpp" />
+    <ClCompile Include="RawDataBuffer.cpp" />
+    <ClCompile Include="Result.cpp" />
+    <ClCompile Include="ROADdataBuffer.cpp" />
+    <ClCompile Include="ROADFormat.cpp" />
+    <ClCompile Include="ROADManager.cpp" />
+    <ClCompile Include="ROADoverDecodingOptions.cpp" />
+    <ClCompile Include="UCharDataContainer.cpp" />
+    <ClCompile Include="UIntDataContainer.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
